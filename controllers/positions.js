@@ -18,9 +18,8 @@ const createPosition = async (req, res, next) => {
 
 const getAllPosition = async (req, res, next) => {
   try {
-    const data = req.body;
     const positions = await prisma.positions.findMany({
-      data,
+    
     });
     res.status(201).json({
         positions,
