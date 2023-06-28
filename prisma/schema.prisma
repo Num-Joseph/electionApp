@@ -10,7 +10,7 @@ datasource db {
 }
 model voters {
   studentId    String   @id @map("_id")
-  studentsName String
+  studentName String
   email        String
   telephone    String?
   password     String
